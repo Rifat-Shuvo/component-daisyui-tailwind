@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register</title>
+</head>
+<body>
+    <div class=' bg-[url("/Banner.jpg")] bg-cover min-h-screen flex justify-center items-center'>
+        <div class='bg-base-100 p-5 rounded-xl shadow-xl w-[31%]'>
+            <h1 class='text-center text-xl font-bold text-blue-500'> Please Register Now</h1>
+            <form>
+                <label class='label'>
+                    <span class='text-blue-500 font-medium'>Name:</span>
+                </label>
+                <input class='border border-blue-500 rounded-lg w-full p-3' type="text" name="name" id="" placeholder='Enter your Full Name here' required />
+                <label class='label'>
+                    <span class='text-blue-500 font-medium'>Photo URL:</span>
+                </label>
+                <input class='border border-blue-500 rounded-lg w-full p-3' type="text" name="photo" id="" placeholder='Enter your Photo URL here' />
+                <label class='label'>
+                    <span class='text-blue-500 font-medium'>Email:</span>
+                </label>
+                <input class='border border-blue-500 rounded-lg w-full p-3' type="email" name="email" id="" placeholder='Enter your email here' />
+                <label class='label'>
+                    <span class='text-blue-500 font-medium'>Password:</span>
+                </label>
+                <input class='mb-4 border border-blue-500 rounded-lg w-full p-3' type="password" name="password" id="" placeholder='Enter your password here' />
+                <label>Don't have an account? <span class='text-red-500 text-sm italic underline font-bold'><Link to="/login">Login Now</Link></span></label>
+                <div class='my-5 text-center'>
+                    <button class='btn btn-outline btn-primary rounded-full'>Register Now</button>
+                </div>
+                <div class="divider divider-primary">or Register with</div>
+                <div class='text-center'>
+                    <SocialLiogin></SocialLiogin>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
